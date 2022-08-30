@@ -6,6 +6,7 @@ action=input("""what do you want to do
       resize
       blur
       black and white""")
-if 
+if action == "resize":
+   resize()
       
       
