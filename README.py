@@ -1,7 +1,7 @@
 # python-assignment-
 import cv2
 import os.path
-from resize import *
+from resize import resize()
 print("welcome to the COMMANDLINE photoeditor")
 action=input("""what do you want to do
       resize
