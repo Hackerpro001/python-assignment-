@@ -2,7 +2,7 @@
 import cv2
 import os.path
 from resize import resize()
-from b&w import 
+from b&w import baw()
 print("welcome to the COMMANDLINE photoeditor")
 action=input("""what do you want to do
       resize
@@ -11,6 +11,6 @@ action=input("""what do you want to do
 if action == "resize":
    resize()
 elif action == "black and white":
-      
+      baw()
       
       
