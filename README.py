@@ -190,4 +190,37 @@ btn3.place(x=460, y=595)
 
 # Execute Tkinter
 root.mainloop()
+file=input('file')
+image=cv2.imread(file)
+cv2.imshow(file,image)
+
+def resize():
+    w_image = int(input('width'))
+    h_image = int(input('height'))
+    height, width = h_image, w_image
+    imgresize = cv2.resize(image, (height, width))
+    print(imgresize)
+    cv2.imshow('image resized', imgresize)
+def bright():
+    image.cropped = image[int(input()),int(input())]
+    print('work')
+    cv2.imshow('crop', image.cropped)
+
+
+list = [resize, bright]
+for i in list:
+    print(i)
+
+option = input('choose')
+
+if option == 'resize':
+    resize()
+elif option == 'bright':
+    bright()
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+
       
